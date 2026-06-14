@@ -49,6 +49,8 @@ func ready_norm():
 	charge_cd_timer.timeout.connect(_on_charge_cd_timer_timeout)
 
 	area_2d_mouse.visible = true
+	print("创建加农炮")
+	print("加农炮位置:", row_col)
 
 func cob_cannon_bright_dark():
 	# 你希望变到的 “暗” 颜色或透明度

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cktksmdbn2nmn"]
+[gd_scene format=3 uid="uid://cktksmdbn2nmn"]
 
 [ext_resource type="PackedScene" uid="uid://bkx25sp71flk5" path="res://scenes/character/character_000_base.tscn" id="1_q5all"]
 [ext_resource type="Script" uid="uid://dqppqdw4n40ts" path="res://scripts/character/zombie/zombie_000_base.gd" id="2_72xfp"]
@@ -45,7 +45,7 @@ size = Vector2(40, 20)
 radius = 20.0
 height = 100.0
 
-[node name="Zombie000Base" node_paths=PackedStringArray("node2d_detect_in_slope") instance=ExtResource("1_q5all")]
+[node name="Zombie000Base" unique_id=2107249840 node_paths=PackedStringArray("node2d_detect_in_slope") instance=ExtResource("1_q5all")]
 script = ExtResource("2_72xfp")
 zombie_type = 0
 is_ignore_ladder = false
@@ -60,11 +60,11 @@ is_swimming = false
 sfx_enter_name = &""
 node2d_detect_in_slope = [NodePath("HurtBoxComponent/HurtBoxDetection"), NodePath("HurtBoxComponent/HurtBoxDetectionOnAttack"), NodePath("AttackComponent/DetectComponent")]
 
-[node name="NodeDrop" type="Node2D" parent="Body" index="1"]
+[node name="NodeDrop" type="Node2D" parent="Body" index="1" unique_id=533777648]
 unique_name_in_owner = true
 visible = false
 
-[node name="HpStageChangeComponent" type="Node2D" parent="." index="3"]
+[node name="HpStageChangeComponent" type="Node2D" parent="." index="3" unique_id=418842355]
 unique_name_in_owner = true
 script = ExtResource("6_in461")
 
@@ -76,7 +76,7 @@ sfx_be_attack_armor1 = 0
 sfx_be_attack_armor2 = 0
 max_hp = 270
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HpComponent" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HpComponent" index="0" unique_id=1570813756]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -92,12 +92,12 @@ mouse_filter = 2
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="Armor2Control" type="Control" parent="HpComponent/VBoxContainer" index="0"]
+[node name="Armor2Control" type="Control" parent="HpComponent/VBoxContainer" index="0" unique_id=1107345221]
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
 
-[node name="ProgressBarHpArmor2" type="ProgressBar" parent="HpComponent/VBoxContainer/Armor2Control" index="0"]
+[node name="ProgressBarHpArmor2" type="ProgressBar" parent="HpComponent/VBoxContainer/Armor2Control" index="0" unique_id=1402311558]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.176471)
 custom_minimum_size = Vector2(66, 20)
@@ -120,7 +120,7 @@ max_value = 1.0
 value = 0.64
 show_percentage = false
 
-[node name="LabelHpArmor2" type="Label" parent="HpComponent/VBoxContainer/Armor2Control" index="1"]
+[node name="LabelHpArmor2" type="Label" parent="HpComponent/VBoxContainer/Armor2Control" index="1" unique_id=1261629676]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -140,12 +140,12 @@ label_settings = SubResource("LabelSettings_72xfp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Armor1Control" type="Control" parent="HpComponent/VBoxContainer" index="1"]
+[node name="Armor1Control" type="Control" parent="HpComponent/VBoxContainer" index="1" unique_id=465587038]
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
 
-[node name="ProgressBarHpArmor1" type="ProgressBar" parent="HpComponent/VBoxContainer/Armor1Control" index="0"]
+[node name="ProgressBarHpArmor1" type="ProgressBar" parent="HpComponent/VBoxContainer/Armor1Control" index="0" unique_id=771196554]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.176471)
 custom_minimum_size = Vector2(66, 20)
@@ -168,7 +168,7 @@ max_value = 1.0
 value = 0.5
 show_percentage = false
 
-[node name="LabelHpArmor1" type="Label" parent="HpComponent/VBoxContainer/Armor1Control" index="1"]
+[node name="LabelHpArmor1" type="Label" parent="HpComponent/VBoxContainer/Armor1Control" index="1" unique_id=1065019604]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -188,12 +188,12 @@ label_settings = SubResource("LabelSettings_72xfp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HpControl" type="Control" parent="HpComponent/VBoxContainer" index="2"]
+[node name="HpControl" type="Control" parent="HpComponent/VBoxContainer" index="2" unique_id=1005174841]
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
 
-[node name="ProgressBarHp" type="ProgressBar" parent="HpComponent/VBoxContainer/HpControl" index="0"]
+[node name="ProgressBarHp" type="ProgressBar" parent="HpComponent/VBoxContainer/HpControl" index="0" unique_id=1952561701]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.176471)
 custom_minimum_size = Vector2(66, 20)
@@ -216,7 +216,7 @@ max_value = 1.0
 value = 0.5
 show_percentage = false
 
-[node name="LabelHp" type="Label" parent="HpComponent/VBoxContainer/HpControl" index="1"]
+[node name="LabelHp" type="Label" parent="HpComponent/VBoxContainer/HpControl" index="1" unique_id=682757717]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -236,53 +236,53 @@ label_settings = SubResource("LabelSettings_72xfp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CharredComponent" type="Node2D" parent="." index="5"]
+[node name="CharredComponent" type="Node2D" parent="." index="5" unique_id=426505838]
 unique_name_in_owner = true
 visible = false
 script = ExtResource("11_t14t4")
 
-[node name="ZombieCharred" type="Node2D" parent="CharredComponent" index="0"]
+[node name="ZombieCharred" type="Node2D" parent="CharredComponent" index="0" unique_id=609118366]
 unique_name_in_owner = true
 
-[node name="CharredCorrect" type="Node2D" parent="CharredComponent/ZombieCharred" index="0"]
+[node name="CharredCorrect" type="Node2D" parent="CharredComponent/ZombieCharred" index="0" unique_id=2136149623]
 position = Vector2(-43, -117)
 
-[node name="AttackComponent" type="Node2D" parent="." index="6"]
+[node name="AttackComponent" type="Node2D" parent="." index="6" unique_id=558966890]
 unique_name_in_owner = true
 script = ExtResource("7_b1t0g")
 
-[node name="DetectComponent" type="Node2D" parent="AttackComponent" index="0"]
+[node name="DetectComponent" type="Node2D" parent="AttackComponent" index="0" unique_id=1606584505]
 unique_name_in_owner = true
 script = ExtResource("8_kbcr1")
 is_detect_items = 1
 
-[node name="Area2d" type="Area2D" parent="AttackComponent/DetectComponent" index="0"]
+[node name="Area2d" type="Area2D" parent="AttackComponent/DetectComponent" index="0" unique_id=807261656]
 position = Vector2(0, -40)
 collision_layer = 0
 collision_mask = 34
 monitorable = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent/DetectComponent/Area2d" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent/DetectComponent/Area2d" index="0" unique_id=1032569698]
 position = Vector2(-13, 0)
 shape = SubResource("RectangleShape2D_t14t4")
 
-[node name="MoveComponent" type="Node2D" parent="." index="7"]
+[node name="MoveComponent" type="Node2D" parent="." index="7" unique_id=1713986679]
 unique_name_in_owner = true
 script = ExtResource("8_yye2l")
 
-[node name="SwimBoxComponent" type="Node2D" parent="." index="8"]
+[node name="SwimBoxComponent" type="Node2D" parent="." index="8" unique_id=981994492]
 unique_name_in_owner = true
 script = ExtResource("12_kbcr1")
 
-[node name="Area2D" type="Area2D" parent="SwimBoxComponent" index="0"]
+[node name="Area2D" type="Area2D" parent="SwimBoxComponent" index="0" unique_id=567193401]
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SwimBoxComponent/Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwimBoxComponent/Area2D" index="0" unique_id=1242079527]
 position = Vector2(0, -40)
 shape = SubResource("RectangleShape2D_ewfmg")
 debug_color = Color(0.974132, 0, 0.429002, 0.42)
 
-[node name="DropItemComponent" type="Node2D" parent="." index="9"]
+[node name="DropItemComponent" type="Node2D" parent="." index="9" unique_id=1365242882]
 unique_name_in_owner = true
 script = ExtResource("12_ewfmg")
 can_drop_x_range = null
@@ -300,7 +300,7 @@ collision_layer = 4
 collision_mask = 0
 monitoring = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent/HurtBoxDetection" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent/HurtBoxDetection" index="0" unique_id=1397224251]
 position = Vector2(0, -50)
 shape = SubResource("CapsuleShape2D_xdwn0")
 
@@ -311,13 +311,13 @@ collision_layer = 512
 position = Vector2(0, -50)
 shape = SubResource("CapsuleShape2D_xdwn0")
 
-[node name="HurtBoxDetectionOnAttack" type="Area2D" parent="HurtBoxComponent" index="2"]
+[node name="HurtBoxDetectionOnAttack" type="Area2D" parent="HurtBoxComponent" index="2" unique_id=938381360]
 unique_name_in_owner = true
 collision_layer = 16
 collision_mask = 0
 monitoring = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent/HurtBoxDetectionOnAttack" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent/HurtBoxDetectionOnAttack" index="0" unique_id=856483964]
 position = Vector2(0, -50)
 shape = SubResource("CapsuleShape2D_xdwn0")
 

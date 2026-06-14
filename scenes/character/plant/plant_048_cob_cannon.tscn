@@ -137,22 +137,22 @@ texture = ExtResource("2_1lbhp")
 centered = false
 
 [node name="CobCannon_log2" type="Sprite2D" parent="Body/BodyCorrect" index="7" unique_id=489955774]
-position = Vector2(15.2, 12.416448)
+position = Vector2(15.2, 11.7586975)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_vaxr0")
 centered = false
 
 [node name="CobCannon_fuse" type="Sprite2D" parent="Body/BodyCorrect" index="8" unique_id=478941981]
-position = Vector2(-15.316447, 31.789803)
-rotation = -0.98041
-scale = Vector2(0.802, 0.81416446)
-skew = -0.17029037
+position = Vector2(-14.03479, 25.197857)
+rotation = -0.875814
+scale = Vector2(0.8, 0.8061739)
+skew = -0.08210704
 texture = ExtResource("4_jw2jr")
 centered = false
 
 [node name="CobCannon_husk4" type="Sprite2D" parent="Body/BodyCorrect" index="9" unique_id=1020651309]
-position = Vector2(50.641777, 10.149342)
-scale = Vector2(1.0267467, 0.9802533)
+position = Vector2(51, 7.5521846)
+scale = Vector2(1.012761, 0.9908261)
 texture = ExtResource("5_6s6ux")
 centered = false
 
@@ -164,8 +164,8 @@ texture = ExtResource("5_6s6ux")
 centered = false
 
 [node name="CobCannon_husk3" type="Sprite2D" parent="Body/BodyCorrect" index="11" unique_id=615062262]
-position = Vector2(67.1, -3.1924343)
-scale = Vector2(0.8217467, 0.78383553)
+position = Vector2(67.2, -5.8891177)
+scale = Vector2(0.8097609, 0.79282606)
 texture = ExtResource("6_q5hnh")
 centered = false
 
@@ -178,20 +178,20 @@ texture = ExtResource("6_q5hnh")
 centered = false
 
 [node name="CobCannon_cob" type="Sprite2D" parent="Body/BodyCorrect" index="13" unique_id=2043673293]
-position = Vector2(22.941776, -1.0924343)
-scale = Vector2(0.8217467, 0.78383553)
+position = Vector2(23.541304, -3.7478154)
+scale = Vector2(0.8097609, 0.79282606)
 texture = ExtResource("7_vaxr0")
 centered = false
 
 [node name="CobCannon_husk2" type="Sprite2D" parent="Body/BodyCorrect" index="14" unique_id=719457057]
-position = Vector2(11.983553, 5.207566)
-scale = Vector2(0.8217467, 0.78383553)
+position = Vector2(12.782605, 2.6108823)
+scale = Vector2(0.8097609, 0.79282606)
 texture = ExtResource("7_sqcik")
 centered = false
 
 [node name="Anim_face" type="Sprite2D" parent="Body/BodyCorrect" index="15" unique_id=1651421292]
-position = Vector2(10.283552, -12.150658)
-scale = Vector2(0.8217467, 0.78383553)
+position = Vector2(11.082605, -14.889118)
+scale = Vector2(0.8097609, 0.79282606)
 texture = ExtResource("8_2gymn")
 centered = false
 
@@ -203,7 +203,7 @@ texture = ExtResource("11_q5hnh")
 centered = false
 
 [node name="CobCannon_log1" type="Sprite2D" parent="Body/BodyCorrect" index="17" unique_id=655577075]
-position = Vector2(6.2, 36.216446)
+position = Vector2(6.2, 35.558697)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_vaxr0")
 centered = false

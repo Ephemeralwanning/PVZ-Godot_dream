@@ -586,7 +586,13 @@ func get_save_game_data_plant_cell() -> ResourceSaveGamePlantCell:
 	save_game_data_plant_cell.row_col = row_col
 	for place_plant_in_cell in plant_in_cell:
 		if is_instance_valid(plant_in_cell[place_plant_in_cell]):
-			save_game_data_plant_cell.plant_type_in_cell[place_plant_in_cell] = plant_in_cell[place_plant_in_cell].gat_save_game_data_plant()
+			## 如果不是加农炮
+			if not plant_in_cell[place_plant_in_cell] is Plant048CobCannon:
+				save_game_data_plant_cell.plant_type_in_cell[place_plant_in_cell] = plant_in_cell[place_plant_in_cell].gat_save_game_data_plant()
+			else:
+				var plant_48_cob_cannon:Plant048CobCannon = plant_in_cell[place_plant_in_cell] as Plant048CobCannon
+				if plant_48_cob_cannon.plant_cell_next != self:
+					save_game_data_plant_cell.plant_type_in_cell[place_plant_in_cell] = plant_in_cell[place_plant_in_cell].gat_save_game_data_plant()
 
 	if is_instance_valid(ladder):
 		save_game_data_plant_cell.is_ladder = true

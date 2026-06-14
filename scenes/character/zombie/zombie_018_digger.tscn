@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://drjin63a4btwk"]
+[gd_scene format=3 uid="uid://drjin63a4btwk"]
 
 [ext_resource type="PackedScene" uid="uid://cktksmdbn2nmn" path="res://scenes/character/zombie/zombie_000_base.tscn" id="1_mkrts"]
 [ext_resource type="Texture2D" uid="uid://du7oo4nli6r46" path="res://assets/reanim/Zombie_digger_innerarm_lower.png" id="2_ttrtc"]
@@ -2037,7 +2037,7 @@ advance_expression = "is_up_end"
 states/Zombie_digger_death/node = SubResource("AnimationNodeAnimation_sgrki")
 states/Zombie_digger_death/position = Vector2(631, 495)
 states/Zombie_digger_dig/node = SubResource("AnimationNodeAnimation_fo048")
-states/Zombie_digger_dig/position = Vector2(460, 100)
+states/Zombie_digger_dig/position = Vector2(459, 100)
 states/Zombie_digger_eat/node = SubResource("AnimationNodeAnimation_24p33")
 states/Zombie_digger_eat/position = Vector2(943, 348)
 states/Zombie_digger_idle/node = SubResource("AnimationNodeAnimation_e2y74")
@@ -2051,12 +2051,12 @@ states/Zombie_digger_up/position = Vector2(371, 191)
 states/Zombie_digger_walk/node = SubResource("AnimationNodeAnimation_0lsoy")
 states/Zombie_digger_walk/position = Vector2(713, 348)
 transitions = ["Start", "Zombie_digger_idle", SubResource("AnimationNodeStateMachineTransition_fk1an"), "Start", "Zombie_digger_dig", SubResource("AnimationNodeStateMachineTransition_yocpx"), "Zombie_digger_idle", "Zombie_digger_dig", SubResource("AnimationNodeStateMachineTransition_xe4ql"), "Zombie_digger_landing", "Zombie_digger_walk", SubResource("AnimationNodeStateMachineTransition_g4wth"), "Zombie_digger_walk", "Zombie_digger_eat", SubResource("AnimationNodeStateMachineTransition_cq2k0"), "Zombie_digger_eat", "Zombie_digger_walk", SubResource("AnimationNodeStateMachineTransition_27bjy"), "Zombie_digger_walk", "Zombie_digger_death", SubResource("AnimationNodeStateMachineTransition_iss48"), "Zombie_digger_eat", "Zombie_digger_death", SubResource("AnimationNodeStateMachineTransition_hgdf1"), "Zombie_digger_landing", "Zombie_digger_death", SubResource("AnimationNodeStateMachineTransition_q7ucn"), "Zombie_digger_dig", "Zombie_digger_up", SubResource("AnimationNodeStateMachineTransition_sgrki"), "Zombie_digger_up", "Zombie_digger_walk", SubResource("AnimationNodeStateMachineTransition_fo048"), "Zombie_digger_up", "Zombie_digger_death", SubResource("AnimationNodeStateMachineTransition_dyxd0"), "Zombie_digger_dig", "Zombie_digger_landing_start", SubResource("AnimationNodeStateMachineTransition_ddxed"), "Zombie_digger_landing_start", "Zombie_digger_landing", SubResource("AnimationNodeStateMachineTransition_24p33")]
-graph_offset = Vector2(311, 128)
+graph_offset = Vector2(153, 66)
 
 [sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_wbmuf"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_g136x"]
-graph_offset = Vector2(-247.78586, 16.691956)
+graph_offset = Vector2(-219, 78)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_e611t")
 nodes/StateMachine/position = Vector2(-160, 140)
 nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_wbmuf")
@@ -2090,7 +2090,7 @@ scale_max = 0.7
 scale_curve = SubResource("CurveTexture_17vcl")
 anim_offset_max = 1.0
 
-[node name="Zombie018Digger" node_paths=PackedStringArray("iron_node") instance=ExtResource("1_mkrts")]
+[node name="Zombie018Digger" unique_id=431538393 node_paths=PackedStringArray("iron_node") instance=ExtResource("1_mkrts")]
 script = ExtResource("2_xqakx")
 digger_target_pos_x = 60.0
 is_dig = true
@@ -2105,202 +2105,201 @@ sfx_enter_name = &"digger_zombie"
 [node name="BodyCorrect" parent="Body" index="0"]
 position = Vector2(-47, -121)
 
-[node name="_ground" type="Sprite2D" parent="Body/BodyCorrect" index="0"]
+[node name="_ground" type="Sprite2D" parent="Body/BodyCorrect" index="0" unique_id=1790005106]
 visible = false
 use_parent_material = true
-position = Vector2(-1.8533094, 90.1)
+position = Vector2(-8.644068, 90.1)
 texture = ExtResource("3_wa1ir")
 centered = false
 
-[node name="Zombie_digger_innerarm_lower" type="Sprite2D" parent="Body/BodyCorrect" index="1"]
+[node name="Zombie_digger_innerarm_lower" type="Sprite2D" parent="Body/BodyCorrect" index="1" unique_id=1862023958]
 use_parent_material = true
-position = Vector2(14.522256, 68.69624)
-rotation = -0.13458186
-scale = Vector2(0.799, 0.799)
+position = Vector2(14.980237, 67.31917)
+rotation = -0.090381086
+scale = Vector2(0.7994012, 0.7994012)
 texture = ExtResource("2_ttrtc")
 centered = false
 
-[node name="Zombie_digger_pickaxe" type="Node2D" parent="Body/BodyCorrect" index="2"]
+[node name="Zombie_digger_pickaxe" type="Node2D" parent="Body/BodyCorrect" index="2" unique_id=480439619]
 
-[node name="Zombie_digger_pickaxe" type="Sprite2D" parent="Body/BodyCorrect/Zombie_digger_pickaxe" index="0"]
+[node name="Zombie_digger_pickaxe" type="Sprite2D" parent="Body/BodyCorrect/Zombie_digger_pickaxe" index="0" unique_id=8830218]
 use_parent_material = true
-position = Vector2(-8.677744, 66.751724)
-rotation = 0.06257469
+position = Vector2(-11.879644, 70.57846)
+rotation = -0.09108156
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("3_ne28n")
 centered = false
 
-[node name="Zombie_digger_dirt" type="Sprite2D" parent="Body/BodyCorrect" index="3"]
+[node name="Zombie_digger_dirt" type="Sprite2D" parent="Body/BodyCorrect" index="3" unique_id=88275193]
 visible = false
 use_parent_material = true
 centered = false
 
-[node name="Zombie_digger_innerarm_hand" type="Sprite2D" parent="Body/BodyCorrect" index="4"]
+[node name="Zombie_digger_innerarm_hand" type="Sprite2D" parent="Body/BodyCorrect" index="4" unique_id=275935621]
 use_parent_material = true
-position = Vector2(13.5, 85.255486)
-rotation = 0.050291657
+position = Vector2(13.259881, 85.51917)
+rotation = -0.01884339
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("4_eevw8")
 centered = false
 
-[node name="Zombie_digger_innerarm_upper" type="Sprite2D" parent="Body/BodyCorrect" index="5"]
+[node name="Zombie_digger_innerarm_upper" type="Sprite2D" parent="Body/BodyCorrect" index="5" unique_id=2115971839]
 use_parent_material = true
-position = Vector2(15.240752, 57.896236)
-rotation = -0.06974756
+position = Vector2(15.780237, 56.69941)
+rotation = -0.047113847
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("5_pi1i5")
 centered = false
 
-[node name="Zombie_digger_innerleg_foot" type="Sprite2D" parent="Body/BodyCorrect" index="6"]
+[node name="Zombie_digger_innerleg_foot" type="Sprite2D" parent="Body/BodyCorrect" index="6" unique_id=1995763019]
 use_parent_material = true
-position = Vector2(21.018496, 106.38151)
-rotation = 0.05753056
+position = Vector2(20.8, 106.92036)
+rotation = 0.04013225
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("6_oyy1s")
 centered = false
 
-[node name="Zombie_digger_innerleg_lower" type="Sprite2D" parent="Body/BodyCorrect" index="7"]
+[node name="Zombie_digger_innerleg_lower" type="Sprite2D" parent="Body/BodyCorrect" index="7" unique_id=1224845586]
 use_parent_material = true
-position = Vector2(21.718496, 90.5)
-rotation = 0.06625697
+position = Vector2(21.219763, 90.640114)
+rotation = 0.04536825
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("7_vummk")
 centered = false
 
-[node name="Zombie_digger_innerleg_upper" type="Sprite2D" parent="Body/BodyCorrect" index="8"]
+[node name="Zombie_digger_innerleg_upper" type="Sprite2D" parent="Body/BodyCorrect" index="8" unique_id=2092378679]
 use_parent_material = true
-position = Vector2(22.440752, 80.07774)
-rotation = 0.014416816
-scale = Vector2(0.852, 0.91940755)
-skew = 6.151577
+position = Vector2(22.64012, 79.219765)
+rotation = 0.04504429
+scale = Vector2(0.852, 0.92)
+skew = 6.1526423
 texture = ExtResource("8_tofxt")
 centered = false
 
-[node name="Zombie_digger_body" type="Sprite2D" parent="Body/BodyCorrect" index="9"]
+[node name="Zombie_digger_body" type="Sprite2D" parent="Body/BodyCorrect" index="9" unique_id=110761563]
 use_parent_material = true
-position = Vector2(15.263009, 35.19624)
-rotation = -0.06974756
-scale = Vector2(0.8, 0.8)
+position = Vector2(16.340712, 33.239525)
+rotation = -0.03489625
+scale = Vector2(0.80919766, 0.81439525)
 texture = ExtResource("9_6mp8v")
 centered = false
 
-[node name="Head" type="Node2D" parent="Body/BodyCorrect" index="10"]
+[node name="Head" type="Node2D" parent="Body/BodyCorrect" index="10" unique_id=1909041397]
 use_parent_material = true
 
-[node name="Anim_head1" type="Sprite2D" parent="Body/BodyCorrect/Head" index="0"]
+[node name="Anim_head1" type="Sprite2D" parent="Body/BodyCorrect/Head" index="0" unique_id=1024191328]
 use_parent_material = true
-position = Vector2(-0.49623924, 15.43323)
-rotation = -0.0055587497
-scale = Vector2(0.8, 0.8)
+position = Vector2(-1.3191698, 16.598814)
+rotation = -0.043622848
+scale = Vector2(0.7994012, 0.7994012)
 texture = ExtResource("10_gv8ai")
 centered = false
 
-[node name="Zombie_digger_head_eye" type="Sprite2D" parent="Body/BodyCorrect/Head" index="1"]
+[node name="Zombie_digger_head_eye" type="Sprite2D" parent="Body/BodyCorrect/Head" index="1" unique_id=1913044439]
 visible = false
 use_parent_material = true
 centered = false
 
-[node name="Zombie_digger_head_eye1" type="Sprite2D" parent="Body/BodyCorrect/Head" index="2"]
+[node name="Zombie_digger_head_eye1" type="Sprite2D" parent="Body/BodyCorrect/Head" index="2" unique_id=517850963]
 visible = false
 use_parent_material = true
 centered = false
 
-[node name="Anim_head2" type="Sprite2D" parent="Body/BodyCorrect/Head" index="3"]
+[node name="Anim_head2" type="Sprite2D" parent="Body/BodyCorrect/Head" index="3" unique_id=587891146]
 use_parent_material = true
-position = Vector2(6.3222566, 50.310974)
-rotation = -0.05229456
-scale = Vector2(0.8, 0.8)
-skew = 0.046735752
+position = Vector2(6.9604745, 51.3581)
+rotation = -0.0785191
+scale = Vector2(0.8, 0.7994012)
+skew = 0.03489623
 texture = ExtResource("11_mjmg8")
 centered = false
 
-[node name="Zombie_digger_outerleg_foot" type="Sprite2D" parent="Body/BodyCorrect" index="11"]
+[node name="Zombie_digger_outerleg_foot" type="Sprite2D" parent="Body/BodyCorrect" index="11" unique_id=1993493863]
 use_parent_material = true
-position = Vector2(41.84075, 117.85925)
-rotation = -0.034840968
+position = Vector2(41.9, 117.7)
+rotation = -0.023034459
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("12_cheb5")
 centered = false
 
-[node name="Zombie_digger_outerleg_lower" type="Sprite2D" parent="Body/BodyCorrect" index="12"]
+[node name="Zombie_digger_outerleg_lower" type="Sprite2D" parent="Body/BodyCorrect" index="12" unique_id=782077221]
 use_parent_material = true
-position = Vector2(46.681503, 104.581505)
-rotation = -0.040465344
-scale = Vector2(0.801, 0.9234797)
-skew = -0.057530243
+position = Vector2(47.380238, 104.98024)
+rotation = -0.026169848
+scale = Vector2(0.801, 0.8843775)
+skew = -0.03804171
 texture = ExtResource("13_hpwbq")
 centered = false
 
-[node name="Zombie_digger_outerleg_upper" type="Sprite2D" parent="Body/BodyCorrect" index="13"]
+[node name="Zombie_digger_outerleg_upper" type="Sprite2D" parent="Body/BodyCorrect" index="13" unique_id=1383541938]
 use_parent_material = true
-position = Vector2(40.1, 79.74075)
-rotation = 0.029993342
-scale = Vector2(1.001, 0.99940753)
-skew = 0.046024233
+position = Vector2(39.95988, 79.94012)
+rotation = 0.020588389
+scale = Vector2(1.001, 1)
+skew = 0.03140587
 texture = ExtResource("14_xqakx")
 centered = false
 
-[node name="LowerHand" type="Node2D" parent="Body/BodyCorrect" index="14"]
+[node name="LowerHand" type="Node2D" parent="Body/BodyCorrect" index="14" unique_id=481310706]
 use_parent_material = true
 
-[node name="Zombie_outerarm_hand" type="Sprite2D" parent="Body/BodyCorrect/LowerHand" index="0"]
+[node name="Zombie_outerarm_hand" type="Sprite2D" parent="Body/BodyCorrect/LowerHand" index="0" unique_id=1638756548]
 use_parent_material = true
-position = Vector2(31.277744, 84.418495)
-rotation = 0.36774474
-scale = Vector2(0.796, 0.796)
+position = Vector2(30.779644, 87.37965)
+rotation = 0.14971234
+scale = Vector2(0.7964012, 0.7964012)
 texture = ExtResource("15_eqp2h")
 centered = false
 
-[node name="Zombie_outerarm_lower" type="Sprite2D" parent="Body/BodyCorrect/LowerHand" index="1"]
+[node name="Zombie_outerarm_lower" type="Sprite2D" parent="Body/BodyCorrect/LowerHand" index="1" unique_id=323382207]
 use_parent_material = true
-position = Vector2(34, 68.39624)
-rotation = 0.06774525
-scale = Vector2(0.8, 0.8)
+position = Vector2(33.3, 68.87965)
+rotation = -0.010116389
+scale = Vector2(0.8, 0.8213953)
 texture = ExtResource("16_wa1ir")
 centered = false
 
-[node name="Zombie_digger_outerarm_upper" type="Sprite2D" parent="Body/BodyCorrect" index="15"]
+[node name="Zombie_digger_outerarm_upper" type="Sprite2D" parent="Body/BodyCorrect" index="15" unique_id=1414745825]
 use_parent_material = true
-position = Vector2(32.00376, 44.455486)
-rotation = -0.1154489
+position = Vector2(33.24071, 43.099407)
+rotation = -0.0785191
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("17_sgrki")
 centered = false
 
-[node name="Zombie_digger_rise" type="Sprite2D" parent="Body/BodyCorrect" index="16"]
+[node name="Zombie_digger_rise" type="Sprite2D" parent="Body/BodyCorrect" index="16" unique_id=611289439]
 visible = false
 use_parent_material = true
 centered = false
 
-[node name="Hardhat" type="Node2D" parent="Body/BodyCorrect" index="17"]
+[node name="Hardhat" type="Node2D" parent="Body/BodyCorrect" index="17" unique_id=499274504]
 use_parent_material = true
 
-[node name="Zombie_digger_hardhat" type="Sprite2D" parent="Body/BodyCorrect/Hardhat" index="0"]
+[node name="Zombie_digger_hardhat" type="Sprite2D" parent="Body/BodyCorrect/Hardhat" index="0" unique_id=931547745]
 use_parent_material = true
-position = Vector2(-19.936993, 3.1739829)
-rotation = 0.057596
-scale = Vector2(0.799, 0.799)
+position = Vector2(-21.659288, 6.998814)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("18_fo048")
 centered = false
 
-[node name="Zombie_digger_dig" type="Sprite2D" parent="Body/BodyCorrect" index="18"]
+[node name="Zombie_digger_dig" type="Sprite2D" parent="Body/BodyCorrect" index="18" unique_id=819430600]
 visible = false
 use_parent_material = true
 centered = false
 
-[node name="ZombieQuestionmark" type="Sprite2D" parent="Body/BodyCorrect" index="19"]
+[node name="ZombieQuestionmark" type="Sprite2D" parent="Body/BodyCorrect" index="19" unique_id=1794644344]
 unique_name_in_owner = true
 visible = false
 position = Vector2(50, 102)
 texture = ExtResource("24_dqfye")
 
-[node name="IronNode" type="Node2D" parent="Body/BodyCorrect" index="20" node_paths=PackedStringArray("all_disappear_nodes")]
+[node name="IronNode" type="Node2D" parent="Body/BodyCorrect" index="20" unique_id=1580700646 node_paths=PackedStringArray("all_disappear_nodes")]
 visible = false
 position = Vector2(13, 85)
 script = ExtResource("22_dqfye")
 all_disappear_nodes = [NodePath("../Zombie_digger_pickaxe")]
 
-[node name="Zombie_digger_pickaxe" type="Sprite2D" parent="Body/BodyCorrect/IronNode" index="0"]
+[node name="Zombie_digger_pickaxe" type="Sprite2D" parent="Body/BodyCorrect/IronNode" index="0" unique_id=1719108511]
 use_parent_material = true
 position = Vector2(-16.999996, -17)
 rotation = 0.06184445
@@ -2308,19 +2307,19 @@ scale = Vector2(0.799, 0.799)
 texture = ExtResource("3_ne28n")
 centered = false
 
-[node name="Node2D_Hand_Drop" type="Node2D" parent="Body/NodeDrop" index="0"]
+[node name="Node2D_Hand_Drop" type="Node2D" parent="Body/NodeDrop" parent_id_path=PackedInt32Array(533777648) index="0" unique_id=910914156]
 script = ExtResource("20_fo048")
 
-[node name="Hand_Drop" type="Node2D" parent="Body/NodeDrop/Node2D_Hand_Drop" index="0"]
+[node name="Hand_Drop" type="Node2D" parent="Body/NodeDrop/Node2D_Hand_Drop" index="0" unique_id=188636048]
 position = Vector2(5, -36)
 
-[node name="Zombie_outerarm_hand" type="Sprite2D" parent="Body/NodeDrop/Node2D_Hand_Drop/Hand_Drop" index="0"]
+[node name="Zombie_outerarm_hand" type="Sprite2D" parent="Body/NodeDrop/Node2D_Hand_Drop/Hand_Drop" index="0" unique_id=1770974782]
 position = Vector2(-18, 12.1801)
 scale = Vector2(0.798, 0.808)
 texture = ExtResource("15_eqp2h")
 centered = false
 
-[node name="Zombie_outerarm_lower" type="Sprite2D" parent="Body/NodeDrop/Node2D_Hand_Drop/Hand_Drop" index="1"]
+[node name="Zombie_outerarm_lower" type="Sprite2D" parent="Body/NodeDrop/Node2D_Hand_Drop/Hand_Drop" index="1" unique_id=1782736641]
 position = Vector2(-19, -4.11985)
 rotation = -0.277507
 scale = Vector2(0.799, 0.809)
@@ -2328,20 +2327,20 @@ skew = 0.00349021
 texture = ExtResource("16_wa1ir")
 centered = false
 
-[node name="Node2D_Head_Drop" type="Node2D" parent="Body/NodeDrop" index="1"]
+[node name="Node2D_Head_Drop" type="Node2D" parent="Body/NodeDrop" parent_id_path=PackedInt32Array(533777648) index="1" unique_id=1655549375]
 script = ExtResource("23_24p33")
 
-[node name="Head_Drop" type="Node2D" parent="Body/NodeDrop/Node2D_Head_Drop" index="0"]
+[node name="Head_Drop" type="Node2D" parent="Body/NodeDrop/Node2D_Head_Drop" index="0" unique_id=1353543069]
 position = Vector2(-20, -90)
 
-[node name="Anim_head1" type="Sprite2D" parent="Body/NodeDrop/Node2D_Head_Drop/Head_Drop" index="0"]
+[node name="Anim_head1" type="Sprite2D" parent="Body/NodeDrop/Node2D_Head_Drop/Head_Drop" index="0" unique_id=406804023]
 position = Vector2(-17.2176, -21)
 rotation = 0.284489
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("10_gv8ai")
 centered = false
 
-[node name="Anim_head2" type="Sprite2D" parent="Body/NodeDrop/Node2D_Head_Drop/Head_Drop" index="1"]
+[node name="Anim_head2" type="Sprite2D" parent="Body/NodeDrop/Node2D_Head_Drop/Head_Drop" index="1" unique_id=598887441]
 position = Vector2(-20.2176, 15.9)
 rotation = 0.202458
 scale = Vector2(0.802, 0.799)
@@ -2349,102 +2348,98 @@ skew = 0.0820307
 texture = ExtResource("11_mjmg8")
 centered = false
 
-[node name="Node2D_Arm1_Drop" type="Node2D" parent="Body/NodeDrop" index="2"]
+[node name="Node2D_Arm1_Drop" type="Node2D" parent="Body/NodeDrop" parent_id_path=PackedInt32Array(533777648) index="2" unique_id=66382718]
 script = ExtResource("28_yocpx")
 bounce_damping = 0.2
 
-[node name="Node2D" type="Node2D" parent="Body/NodeDrop/Node2D_Arm1_Drop" index="0"]
+[node name="Node2D" type="Node2D" parent="Body/NodeDrop/Node2D_Arm1_Drop" index="0" unique_id=1080519671]
 position = Vector2(-21, -101)
 
-[node name="Zombie_digger_hardhat" type="Sprite2D" parent="Body/NodeDrop/Node2D_Arm1_Drop/Node2D" index="0"]
+[node name="Zombie_digger_hardhat" type="Sprite2D" parent="Body/NodeDrop/Node2D_Arm1_Drop/Node2D" index="0" unique_id=85792699]
 position = Vector2(-36, -25)
 rotation = 0.315905
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("23_mjmg8")
 centered = false
 
-[node name="HpStageChangeComponent" parent="." index="3"]
+[node name="HpStageChangeComponent" parent="." index="3" unique_id=418842355]
 body_change = Array[ExtResource("19_sgrki")]([SubResource("Resource_o2wdo"), SubResource("Resource_v8xbl")])
 body_change_armor1 = Array[ExtResource("19_sgrki")]([SubResource("Resource_oy7xl"), SubResource("Resource_l8fa3"), SubResource("Resource_g4wth")])
 
 [node name="HpComponent" parent="." index="4"]
 max_hp_armor1 = 100
 
-[node name="CharredCorrect" parent="CharredComponent/ZombieCharred" index="0"]
+[node name="CharredCorrect" parent="CharredComponent/ZombieCharred" parent_id_path=PackedInt32Array(609118366) index="0" unique_id=2136149623]
 position = Vector2(-54, -124)
 
-[node name="Anim_crumble" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="0"]
+[node name="Anim_crumble" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="0" unique_id=1995305116]
 centered = false
 
-[node name="Anim_crumble_noaxe" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="1"]
+[node name="Anim_crumble_noaxe" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="1" unique_id=1791583252]
 visible = false
 centered = false
 
-[node name="Body" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="2"]
+[node name="Body" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="2" unique_id=412591127]
 position = Vector2(7.8, 31.3)
 texture = ExtResource("19_oyy1s")
 centered = false
 
-[node name="Pile1_2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="3"]
+[node name="Pile1_2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="3" unique_id=286498615]
 visible = false
 centered = false
 
-[node name="Pille2_3" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="4"]
+[node name="Pille2_3" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="4" unique_id=1142278918]
 visible = false
 centered = false
 
-[node name="Pile2_2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="5"]
+[node name="Pile2_2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="5" unique_id=1172975530]
 visible = false
 centered = false
 
-[node name="Tail" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="6"]
+[node name="Tail" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="6" unique_id=799767883]
 visible = false
 centered = false
 
-[node name="Pile2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="7"]
+[node name="Pile2" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="7" unique_id=968902926]
 visible = false
 centered = false
 
-[node name="Pile1" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="8"]
+[node name="Pile1" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="8" unique_id=243273923]
 visible = false
 centered = false
 
-[node name="Axe" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="9"]
+[node name="Axe" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="9" unique_id=1855428229]
 position = Vector2(-6.2, 67.3)
 texture = ExtResource("20_vummk")
 centered = false
 
-[node name="Head" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="10"]
+[node name="Head" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="10" unique_id=1901096665]
 position = Vector2(-2.4, 15.5)
 texture = ExtResource("21_tofxt")
 centered = false
 
-[node name="Blink" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="11"]
+[node name="Blink" type="Sprite2D" parent="CharredComponent/ZombieCharred/CharredCorrect" index="11" unique_id=1266764162]
 visible = false
 centered = false
 
-[node name="AnimLib" type="AnimationPlayer" parent="CharredComponent/ZombieCharred/CharredCorrect" index="12"]
-libraries = {
-&"": SubResource("AnimationLibrary_mjmg8")
-}
+[node name="AnimLib" type="AnimationPlayer" parent="CharredComponent/ZombieCharred/CharredCorrect" index="12" unique_id=1800022077]
+libraries/ = SubResource("AnimationLibrary_mjmg8")
 
-[node name="MoveComponent" parent="." index="7"]
+[node name="MoveComponent" parent="." index="7" unique_id=1713986679]
 move_mode = 1
 ori_speed = 40.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="11"]
-libraries = {
-&"": SubResource("AnimationLibrary_xe4ql")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="11" unique_id=44693815]
+libraries/ = SubResource("AnimationLibrary_xe4ql")
 
-[node name="AnimationTree" type="AnimationTree" parent="." index="12"]
+[node name="AnimationTree" type="AnimationTree" parent="." index="12" unique_id=1481475534]
 deterministic = false
 tree_root = SubResource("AnimationNodeBlendTree_g136x")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
 parameters/TimeScale/scale = 0.8
 
-[node name="GPUParticlesDirt" type="GPUParticles2D" parent="." index="13"]
+[node name="GPUParticlesDirt" type="GPUParticles2D" parent="." index="13" unique_id=865241419]
 material = SubResource("CanvasItemMaterial_dqfye")
 emitting = false
 amount = 10
